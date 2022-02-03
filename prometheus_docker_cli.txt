@@ -1,0 +1,8 @@
+--- Without Volume
+
+docker run \
+	-d --name postgres-server \
+	--network host \
+    -e POSTGRESQL_USERNAME=nikx \
+	-e POSTGRESQL_PASSWORD=demo@123 \
+    bitnami/postgresql:latest

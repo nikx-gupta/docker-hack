@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  mariadb-master:
+    image: 'bitnami/mariadb:latest'
+    user: root
+    ports:
+      - '3306'
+    volumes:
+      - /media/nikx/dbdisk/wordpress:/bitnami/mariadb
+    environment:
+      - MARIADB_ROOT_PASSWORD=demo
+      - MARIADB_USER=nikx
+      - MARIADB_PASSWORD=demo
+      - MARIADB_DATABASE=wordpress
